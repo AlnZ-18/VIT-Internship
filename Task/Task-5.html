@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Task5</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        table,
+        tr,
+        th,
+        td{
+            border: 0.1rem solid black;
+            border-collapse: collapse;         
+
+        }
+        th{
+            width: 10rem;
+        }
+        td,
+        input[type='text'],
+        input[type='email'],
+        input[type='password'],
+        input[type='number']
+        {
+            width:25rem;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <th>
+                    <label for="fname">First Name</label>
+                </th>
+                <td>
+                    <input type="text" name="fname" id="fname">
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="lname">Last Name</label>
+                </th>
+                <td>
+                    <input type="text" name="lname" id="lname">
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="email">Email</label>
+                </th>
+                <td>
+                    <input type="email" name="email" id="email">
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="password">Password</label>
+                </th>
+                <td>
+                    <input type="password" name="password" id="password">
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="repassword">Re-Enter Password</label>
+                </th>
+                <td>
+                    <input type="password" name="repassword" id="repassword">
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2">
+                    <label for="gender">Gender</label>
+                </th>
+                <td>
+                    <input type="radio" name="gender" id="male" value="Male">
+                    <label for="male">Male</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="radio" name="gender" id="female" value="Female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="age">Age</label>
+                </th>
+                <td>
+                    <input type="number" name="age" id="age">
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="address">Address</label>
+                </th>
+                <td>
+                    <textarea name="address" id="address" rows="5" cols="52"></textarea>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

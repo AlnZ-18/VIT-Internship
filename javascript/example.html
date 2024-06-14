@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>document</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>Javascript learning</h1>
+    <p id="para1">Hello good morning, I am from kerala</p>
+    <button onclick="Change()">Chance City</button>
+    <script>
+        function Change(){
+            document.getElementById("para1").innerHTML = "Hello good morning, I am from kathmandu"
+            alert('City Changed!!')
+        }
+    </script>
+</body>
+</html>
