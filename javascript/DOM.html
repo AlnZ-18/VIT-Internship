@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DOM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h2 id="name">Alan</h2>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quas quaerat ipsam molestias, repellat laudantium minus et, corrupti in nihil accusantium quis facilis explicabo. Recusandae reiciendis quibusdam vero iusto praesentium!</p>
+    <button id="button" onclick="changeData()">Click Me</button>
+    <button id="button2" onclick="changePara()">para change</button>
+    <script>
+        let nameElement=document.getElementById('name');
+        function changeData(){
+            nameElement.style.textAlign= "center";
+            nameElement.style.backgroundColor = 'black'
+            nameElement.style.color = 'green'
+        }
+
+        let paraElement = document.getElementById("para1");
+        function changePara(){
+            paraElement.innerHTML = "<h3>Change it bijjes</h3>"
+        }
+    </script>
+</body>
+</html>
